@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wish U</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/modal_window.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/app.js"></script>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_vwLZKfgoU89V00bdxwnO2");
+     })();
+  </script>
+</head>
+<body>
+<header class="header">
+  <div class="header-limiter">
+    <h1><a href="#">Computer<span>  science</span>  Wisher</a></h1>
+    <nav>
+    <button class="md-trigger" data-modal="modal-2">Wisher</button>
+    <button class="md-trigger about" data-modal="modal-1">About us</button>
+    </nav>
+  </div>
+
+</header>
+   <div class="md-modal md-effect-1" id="modal-1">
+      <div class="md-content">
+        <h3>How it works?</h3>
+        <div>
+          <p>Computer science Wisher it's a service for sending your wishes anonymously to anyone in CS@UCU or UCU.
+             It's absolutely easy! Write your message and email address, click on button "SEND" and it's all! Your wishes will be sent!
+             Try it right now!</p>
+          <button class="md-close">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-2">
+      <div class="md-content">
+        <h3>Haven't idea?</h3>
+        <div>
+          <p>Try to generate a random wish from our base with the best wishes!</p>
+             <button class="md-generate">generate</button>
+          <button class="md-close">Close</button>
+        </div>
+      </div>
+    </div>
+  <section class="main_section">
+    <div class="background-image"></div>
+    <div class="main">
+    <h1>Anonymous server</h1>
+    <h3>for sending greetings and wishes</h3>
+    <button class="md-trigger" data-modal="modal-3">Send</button></div>
+    <div class="md-modal md-effect-1" id="modal-3">
+      <div class="md-content">
+        <h3>Write a wish</h3>
+        <div>
+          <form class="cf">
+            <div class="half left cf">
+              <input type="email" id="input-email" placeholder="Email address">
+              <button type="submit" value="Submit" id="input-submit">Send!</button>
+            </div>
+            <div class="half right cf">
+             <textarea name="message" type="text" id="input-message" placeholder="Hey! Have a nice day!"></textarea>
+            </div>
+          </form>
+          <button class="md-close">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer class="footer">
+      <div class="footer-right">
+        <a href="https://www.facebook.com/csatucu"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCAXm37jEuwO_HicFxSs7b0g"><i class="fa fa-youtube"></i></a>
+        <a href="https://plus.google.com/u/0/104726097352574886137"><i class="fa fa-google"></i></a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">Made by
+          <a class="footer-info-student" href="https://www.facebook.com/profile.php?id=100002416798078">student</a></p>
+        </p>
+        <p>Roksolyana Lebedenko &copy; 2016</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+    <script>
+      var polyfilter_scriptpath = '/js/';
+    </script>
+    <script src="js/cssParser.js"></script>
+    <script src="js/css-filters-polyfill.js"></script>
+
+</body>
+</html>
